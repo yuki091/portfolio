@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.section-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.wrap{
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.between{
+  justify-content: space-between;
+}
+.around{
+  justify-content: space-around;
+}
+.header {
+  height: 100px;
+  background: #ffffff;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #000000;
+  line-height: 100px;
+}
+.header-nav li {
+  display: inline-block;
+  margin-right: 60px;
+  font-size: 16px;
+}
+.header-nav a {
+  color: #000000;
+}
+#cafe {
+  height: 600px;
+  background: url(../img/Good\ morning\ \(@torthanit\)\ blackplace.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.concept-right h3, .concept-right p {
+  margin-bottom: 60px;
+}
+.concept-left {
+  width: 500px;
+}
+.concept-right {
+  width: 467px;
+}
+.section-title {
+  margin: 123px 0;
+}
+
+.news-wrap {
+  text-align: center;
+}
+.news-cat {
+  width: 25%;
+  background-color: gray;
+  padding: ;
+  box-sizing: border-box;
+}
+.news-cat h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  text-align: center;
+}
+.news-cat p {
+  margin: 0 30px 20px 30px;
+}
+.contact {
+  background: rgba(241, 241, 241);
+}
+.contact .section-title {
+  padding: 40px 0;
+  margin: 0px;
+}
+.form {
+  width: 70%;
+  
+}
+.form > div input {
+  margin-bottom: 20px;
+  padding: 7px;
+}
+label {
+  display: inline-block;
+  width: 30%;
+}
+input, textarea {
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  width: 65%;
+}
+textarea {
+  vertical-align: top;
+  height: 15em;
+}
+.button-submit {
+  text-align: center;
+}
+.button {
+  padding: 10px 30px;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 30px 0;
+}
+
+
+#hamburger, .menu-content{
+  display: none;
+}
+#hamburger.active span:nth-of-type(1){
+  top: 20px;
+  transform: rotate(45deg);
+}
+#hamburger.active span:nth-of-type(2){
+  opacity: 0;
+}
+#hamburger.active span:nth-of-type(3){
+  top: 20px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px){
+  .menu-content{
+    display: block;
+  }
+  .menu-content.menu-title{
+    margin: 40px 20px;
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+.menu-content{
+  width:calc(100% - 80%);
+  height: 100%;
+  text-align: center;
+  transition: .2s;
+  position: fixed;
+  top: 0;
+  left:calc(-100% - 80%);
+  background: #ffffff;
+  color: #333333;
+  box-shadow: 80px 0 raba(38, 98, 213, 0.3);
+}
+.menu-content li a{
+  color: #333333;
+  margin: 15px;
+  padding: 5px;
+  border-bottom: 0.5px solid #2662d5;
+  text-decoration: none;
+  display: block;
+}
+.menu-content li {
+  width: 100%;
+  text-align: left;
+}
+.menu-content.open {
+  left: 0;
+}
+
